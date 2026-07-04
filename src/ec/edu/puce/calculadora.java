@@ -34,6 +34,22 @@ public class calculadora {
                 System.out.println("Opcion no valida");
                 continue;
             }
+            
+            System.out.print("Primer numero: ");
+            while (!scanner.hasNextDouble()) {
+                System.out.println("Ingrese un numero valido");
+                scanner.next();
+                System.out.print("Primer numero: ");
+            }
+            double num1 = scanner.nextDouble();
+
+            System.out.print("Segundo numero: ");
+            while (!scanner.hasNextDouble()) {
+                System.out.println("Ingrese un numero valido");
+                scanner.next();
+                System.out.print("Segundo numero: ");
+            }
+            double num2 = scanner.nextDouble();
         }
     }
 }
