@@ -17,6 +17,23 @@ public class calculadora {
             System.out.println("4. Division");
             System.out.println("5. Salir");
             System.out.print("Elija una opcion: ");
+            
+            if (!scanner.hasNextInt()) {
+                System.out.println("Ingrese un numero valido");
+                scanner.next(); 
+                continue;
+            }
+            opcion = scanner.nextInt();
+
+            if (opcion == 5) {
+                System.out.println("Adios");
+                break;
+            }
+
+            if (opcion < 1 || opcion > 5) {
+                System.out.println("Opcion no valida");
+                continue;
+            }
         }
     }
 }
