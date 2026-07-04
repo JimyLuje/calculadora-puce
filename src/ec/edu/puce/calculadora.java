@@ -50,6 +50,28 @@ public class calculadora {
                 System.out.print("Segundo numero: ");
             }
             double num2 = scanner.nextDouble();
+            
+            switch (opcion) {
+            case 1:
+                System.out.println("Resultado: " + (num1 + num2));
+                break;
+            case 2:
+                System.out.println("Resultado: " + (num1 - num2));
+                break;
+            case 3:
+                System.out.println("Resultado: " + (num1 * num2));
+                break;
+            case 4:
+                if (num2 == 0) {
+                    System.out.println("No se puede dividir por cero.");
+                } else {
+                    System.out.println("Resultado: " + (num1 / num2));
+                }
+                break;
         }
-    }
+
+    } while (opcion != 5);
+
+    scanner.close();
+}
 }
