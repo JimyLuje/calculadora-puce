@@ -26,7 +26,7 @@ public class calculadora {
             opcion = scanner.nextInt();
 
             if (opcion == 5) {
-                System.out.println("Adios");
+                System.out.println("Gracias por utilizar el programa");
                 break;
             }
 
